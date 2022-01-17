@@ -491,21 +491,15 @@ let data = {
     Använd createElement, .innerHTML och append() för denna uppgift.
 </details>
 
-**67** Anropa följande API ```const url = `https://api.chucknorris.io/jokes/random`;```
- med ```fetch()``` och spara svaret i en variabel och ```console.log()```.
- Skapa en section-tagg som kommer agera som en wrapper.
- Kolla hur objektet ser ut och skapa en img-tagg för ```icon_url```. En h2-tagg för ```value``` och 
- till sist en a-tagg för ```url```. ```Append()``` alla dessa taggar på section och sedan ```append()``` på ```body```.
-
 ### Events 
 
-**68** Lyssna efter ett ```click``` event på följande element och skriv ut "go go go!" i ```console.log()```.
+**67** Lyssna efter ett ```click``` event på följande element och skriv ut "go go go!" i ```console.log()```.
 
 ```html
 <button>Lets go!</button>
 ```
 
-**69**
+**68**
 Lyssna efter ett ```click``` event på samtliga ```li``` i följande lista. Vid klick ska en ```alert()``` dyka upp där det står *Jag älskar N!!!* Ex. "Jag älskar äpple!!!"
 
 ```html
@@ -523,6 +517,7 @@ Lyssna efter ett ```click``` event på samtliga ```li``` i följande lista. Vid 
 ```html
 <input type="password" id="password" placeholder="password" />
 ```
+
 <details>
     <summary>hint</summary>
     här är "keyup"-eventet väldigt användbart.
