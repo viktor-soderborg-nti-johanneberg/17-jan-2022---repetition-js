@@ -15,11 +15,11 @@ function name(name) {
 }
 
 function add(num1 = 0, num2 = 0) {
-    return `${threat} Give me your ${num1 + num2} chicken nuggies`;
+    console.log(`${threat} Give me your ${num1 + num2} chicken nuggies`);
 }
 
-let answer = add(32);
-document.body.innerText = answer
+// let answer = add(32);
+// document.body.innerText = answer
 
 /* DATASTRUKTURER*/
 let arr = ['༼ つ ◕_◕ ༽つ', '(☞ﾟヮﾟ)☞', '☜(ﾟヮﾟ☜)', '( •_•)>⌐■-■'];
@@ -56,4 +56,30 @@ let dicegame = {
     }
 };
 
-dicegame.init();
+// for loop
+for(let i = 0; i < num.length; i++) {
+
+    if(num[i] >= 20 && num[i] <= 100) {
+        // document.write(`<p>Varv ${i}, värde: ${num[i]}</p>`);
+    } else {
+        // document.write(`<p>Varv ${i}, värde: ${num[i]} är INTE mellan 20 - 100</p>`);
+    }
+}
+
+document.querySelector('h1').innerText = "Hello Johan!"
+document.querySelector('h2').style.backgroundColor = "red"
+document.querySelector('h2').remove();
+
+let list = document.querySelectorAll('li');
+list.forEach(el => {
+    el.addEventListener('click', () => {
+        console.log(`Du klickade på: ${el.innerText}`);
+        el.classList.toggle("clicked")
+    })
+})
+
+let template = `<p>Hejsan hoppsan! Jag är en template string</p>`
+
+document.querySelector('body').insertAdjacentHTML('beforeend', template)
+
+document.querySelector('body').innerHTML = "";
